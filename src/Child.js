@@ -17,7 +17,7 @@ const Child = () => {
 
     const addToWishList=(name)=>{
         console.log("tracked start!!",name)
-        ReactGA.event({ category: "Button", action: "wishlistaction", label: "wishlistt Button click" },(err)=>{
+        ReactGA.event({ category: "Button", action: "wishlistaction", label: "wishListClicked" },(err)=>{
             if(err){
                 alert("error")
                 console.log(err)
