@@ -4,16 +4,20 @@ import ReactGA from "react-ga4";
 
 const Child = () => {
     useEffect(()=>{
-        ReactGA.send({hitType:"pageview",page:window.location.pathname,title:"HomePage"})
+        ReactGA.send({hitType:"pageview",page:window.location.pathname,title:"Main_pagee"},(err)=>{
+            if(err){
+                alert("error")
+                console.log(err)
+            }else{
+                console.log(" pageview tracked!!")
+            }
+        })
+        
     },[])
 
     const addToWishList=(name)=>{
-        console.log("tracked start!!")
-        ReactGA.event({
-            action:"test action",
-            category:name,
-            label:"test label"
-        },(err)=>{
+        console.log("tracked start!!",name)
+        ReactGA.event({ category: "Button", action: "Click", label: "wishlistt Button" },(err)=>{
             if(err){
                 alert("error")
                 console.log(err)
