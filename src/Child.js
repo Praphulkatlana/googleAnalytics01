@@ -8,7 +8,7 @@ const Child = () => {
     },[])
 
     const addToWishList=(name)=>{
-        alert(" wishlist tracked!!! ")
+        alert("Wishlist tracked!!! ")
         ReactGA.event({
             category:name,
             action:"test action",
