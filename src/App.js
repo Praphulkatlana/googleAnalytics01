@@ -3,7 +3,7 @@ import Child from './Child';
 import ReactGA from "react-ga4";
 
 const trackin_ID="G-1HFMKCP63G";
-ReactGA.initialize(trackin_ID,{debug:true})
+ReactGA.initialize(trackin_ID)
 
 function App() {
   return (
