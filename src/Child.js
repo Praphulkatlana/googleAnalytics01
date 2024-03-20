@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Child.css";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const Child = () => {
     useEffect(()=>{
