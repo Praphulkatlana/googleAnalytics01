@@ -20,7 +20,7 @@ const Child = () => {
       <h1>Title</h1>
       <div id="contain">
         <button onClick={()=>alert("Add to cart")}>Add to cart</button>
-        <button onClick={addToWishList}>Add to wishlist</button>
+        <button onClick={()=>addToWishList("wishlistButtonClicked")}>Add to wishlist</button>
         <button onClick={()=>alert("contact us")}>contact us</button>
         <button onClick={()=>alert("know more")}>know more</button>
       </div>
