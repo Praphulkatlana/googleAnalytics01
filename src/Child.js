@@ -26,11 +26,13 @@ const Child = () => {
             }
         })
     }
+       const addToCart=()=>{ ReactGA.event({ category: "Button", action: "AddToCart", label: "AddToCart" })}
+
   return (
     <div>
       <h1>Title</h1>
       <div id="contain">
-        <button onClick={()=>alert("Add to cart")}>Add to cart</button>
+        <button onClick={addToCart}>Add to cart</button>
         <button onClick={()=>addToWishList("wishlistButtonClicked")}>Add to wishlist</button>
         <button onClick={()=>alert("contact us")}>contact us</button>
         <button onClick={()=>alert("know more")}>know more</button>
