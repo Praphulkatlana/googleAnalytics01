@@ -1,0 +1,10 @@
+#contain{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+button{
+    padding: 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
