@@ -26,7 +26,14 @@ const Child = () => {
             }
         })
     }
-       const addToCart=()=>{ ReactGA.event({ category: "Button", action: "AddToCart", label: "AddToCart" })}
+    //    const addToCart=()=>{ ReactGA.event({ category: "Button", action: "AddToCart", label: "AddToCart" })}
+    const addToCart=()=>{
+        window.gtag("event", "page_viewww", {
+            item1:"item1",
+             item2:"item2",
+              item3:"item3",
+            });
+    }
 
   return (
     <div>
