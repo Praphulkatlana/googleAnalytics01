@@ -3,7 +3,7 @@ import "./Child.css";
 import ReactGA from "react-ga";
 
 const Child = () => {
-    React.useEffect(()=>{
+    useEffect(()=>{
         ReactGA.pageview(window.location.pathname)
     },[])
 
