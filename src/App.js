@@ -1,6 +1,6 @@
 import './App.css';
 import Child from './Child';
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const trackin_ID="G-1HFMKCP63G";
 ReactGA.initialize(trackin_ID)

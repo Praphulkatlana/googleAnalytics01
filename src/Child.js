@@ -4,7 +4,7 @@ import ReactGA from "react-ga";
 
 const Child = () => {
     useEffect(()=>{
-        ReactGA.pageview(window.location.pathname)
+        ReactGA.send({hitType:"pageview",page:window.location.pathname,title:"HomePage"})
     },[])
 
     const addToWishList=(name)=>{
