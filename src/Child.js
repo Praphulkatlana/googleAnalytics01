@@ -28,9 +28,9 @@ const Child = () => {
     }
     const addToCart=()=>{
         window.gtag("event", "addToCart", {
-            item1:"item1",
-             item2:"item2",
-              item3:"item3",
+            name:"keyboard",
+            price:"1500",
+            user  :"praphul",
             });
     }
 
